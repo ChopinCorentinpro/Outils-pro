@@ -17,12 +17,12 @@ function formul()
             console.log(comment);
             form.style.transform = "translate(150%, -50%)";
             result.style.transform = "translateX(0)";
-            $("#userpren").text(name);
+            $("#iduser").text(name);
             $("#mail").text(email);
             $(".name").text(name);
             $(".email").text(email);
             $(".phone").text(phone);
-            $("#sujet").text(subject);
+            $("#idsujet").text(subject);
             $("#commentaires").text(comment);
         }      
 
