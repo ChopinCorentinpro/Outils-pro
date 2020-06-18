@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="src/css/fomulaire.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="src/css/rendu.css">
+    <link rel="stylesheet" href="src/css/button.css">
+</head>
+<body>
+    <div class="wrapper" id="form">
+        <div class="title">
+          <h1>Test Formulaire (CHOPIN Corentin)</h1>
+        </div>
+        <div class="contact-form">
+            <div class="input-fields">
+                <input type="text" class="input" id="name" placeholder="Prénom">
+                <input type="text" class="input" id="email" placeholder="Adresse Email">
+                <input type="text" class="input" id="phone" placeholder="Téléphonne">
+                <input type="text" class="input" id="subject" placeholder="sujet">
+              </div>
+          <div class="msg">
+            <textarea placeholder="Commentaires" id="comment"></textarea>
+            <input type="submit" class="btn" value="Envoyé" onclick="formul()">
+        </div>
+        </div>
+      </div>
+      <div id="result">
+        <div id="cv" class="instaFade">
+            <div class="mainDetails">
+                
+                <div id="name">
+                    <h1 id="userpren" class="quickFade delayTwo">Name</h1>
+                    <h2 id="sujet" class="quickFade delayThree">Sujet</h2>
+                </div>
+                
+                <div id="contactDetails" class="quickFade delayFour">
+                    <ul>
+                        <li>Email: <a href="" class="email">none@error.com</a></li>
+                        <li>Phone: <a href="" class="phone">00.00.00.00.00</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <div id="mainArea" class="quickFade delayFive">
+                <section>
+                    <article>
+                        <div class="sectionTitle">
+                            <h1>Informations Suplémentaires</h1>
+                        </div>
+                        
+                        <div class="sectionContent">
+                            <p id="commentaires">None</p>
+                        </div>
+                    </article>
+                    <div class="clear"></div>
+                </section>                  
+            </div>
+        </div>
+        <div class="button__result" id="printnode">
+              <figure class="btn__return">
+                <div>
+                    <input type="submit" class="btn" value="Imprimé ?" onclick="finish()">
+                    <input type="submit" class="btn" value="C'est parti !" onclick="finish()">
+                </div>
+              </figure>
+              <figure class="btn__return">
+                <div>
+                    <input type="submit" class="btn" value="Retour ?" onclick="back()">
+                    <input type="submit" class="btn" value="Retour !" onclick="back()">
+                </div>
+              </figure>
+    </div>
+<script src="src/js/form.js"></script> 
+</body>
+</html>
